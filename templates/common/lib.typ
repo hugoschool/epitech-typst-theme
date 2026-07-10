@@ -73,8 +73,10 @@
 ]
 
 #let default(doc) = [
-  #show title: set text(size: 3em, font: "Anton")
+  #show title: set text(font: "Anton")
   #show link: set text(fill: colors.blue)
+
+  #set text(font: "IBM Plex Sans")
 
   // Codeblocks
   #show raw.where(block: true): it => pad(
@@ -84,19 +86,6 @@
   #show raw.where(block: true): set block(
     fill: rgb(248, 250, 252),
   )
-
-  #set text(size: 12pt, font: "IBM Plex Sans")
-
-  // By default heading is same size as text
-  // Except for h1, h2, h3
-  #show heading.where(level: 1): set text(size: 30pt)
-  #show heading.where(level: 2): set text(size: 18pt)
-
-  #show heading.where(level: 3): set text(size: 15pt)
-  #show heading.where(level: 3): set block(
-    stroke: (bottom: 1pt),
-  )
-  #show heading.where(level: 3): it => pad(it.body, left: 10pt, bottom: 10pt)
 
   #doc
 ]

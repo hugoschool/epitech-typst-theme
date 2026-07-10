@@ -1,6 +1,6 @@
 #import "../templates/common/lib.typ": *
 #import "../templates/subject/lib.typ"
-#show: default
+#show: lib.default
 
 #set document(title: "DEMO", description: "FULL DEMO OF THE SYNTAX")
 
@@ -45,12 +45,12 @@
 ])
 
 #lib.subject-page([
-  #lib.note("note")
-  #lib.tip("tip")
-  #lib.important("important")
-  #lib.warning("warning")
-  #lib.caution("caution")
-  #lib.note([
+  #note("note")
+  #tip("tip")
+  #important("important")
+  #warning("warning")
+  #caution("caution")
+  #note([
     very
     #linebreak()
     long
