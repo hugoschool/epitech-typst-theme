@@ -56,7 +56,7 @@
       #pad(
         top: 250pt,
         [
-          #lib.epitech-title(title, underscore_color: underscore_color)
+          = #lib.epitech-underscore(title, underscore_color: underscore_color)
         ],
       )
     ],

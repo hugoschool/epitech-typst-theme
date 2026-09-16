@@ -2,13 +2,17 @@
 #import "decoration.typ"
 #import "utils.typ"
 
-#let epitech-title(content, underscore_color: colors.orange) = {
-  show title: set block(below: 0pt)
-  title([
+#let epitech-underscore(content, underscore_color: colors.orange) = {
+  [
     #content
     #h(0fr, weak: true)
     #text("_", fill: underscore_color)
-  ])
+  ]
+}
+
+#let epitech-title(content, underscore_color: colors.orange) = {
+  show title: set block(below: 0pt)
+  title(epitech-underscore(content, underscore_color: underscore_color))
 }
 
 #let epitech-subtitle(content, underscore_color: colors.green) = {
