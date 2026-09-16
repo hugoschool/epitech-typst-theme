@@ -14,16 +14,7 @@
       ],
     )
   ],
-  show-logo: true,
-) = [
-  #slide[
-    #set page(fill: lib.colors.blue, numbering: none)
-    #set text(fill: white)
-
-    #if show-logo [
-      #lib.utils.colorized-image("/assets/epitech.svg", width: 150pt, original_color: "#013afb", color: white)
-    ]
-
+  decoration: context [
     #let margin = 35pt;
 
     #lib.decoration.block(
@@ -38,6 +29,18 @@
       dx: margin - 250pt,
       dy: -margin + 125pt,
     )
+  ],
+  show-logo: true,
+) = [
+  #slide[
+    #set page(fill: lib.colors.blue, numbering: none)
+    #set text(fill: white)
+
+    #if show-logo [
+      #lib.utils.colorized-image("/assets/epitech.svg", width: 150pt, original_color: "#013afb", color: white)
+    ]
+
+    #decoration
 
     #set align(horizon)
 
@@ -58,6 +61,35 @@
         [
           = #lib.epitech-underscore(title, underscore_color: underscore_color)
         ],
+      )
+    ],
+    show-logo: false,
+  )
+]
+
+#let slide-final(
+  content: context [
+    #set align(center)
+
+    #lib.utils.colorized-image("/assets/epitech.svg", width: 300pt, original_color: "#013afb", color: white)
+  ],
+) = [
+  #slide-landing(
+    content: content,
+    decoration: [
+      #let margin = 35pt;
+
+      #lib.decoration.block(
+        250pt,
+        125pt,
+        dx: margin,
+        dy: -margin - margin,
+      )
+      #lib.decoration.block(
+        125pt,
+        125pt,
+        dx: -680pt,
+        dy: 350pt,
       )
     ],
     show-logo: false,
