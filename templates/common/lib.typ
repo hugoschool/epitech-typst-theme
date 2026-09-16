@@ -29,7 +29,10 @@
     [
       #box(
         pad(
-          content,
+          pad(
+            content,
+            left: 5pt
+          ),
           10pt,
         ),
         fill: background_color,
