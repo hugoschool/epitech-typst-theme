@@ -1,7 +1,7 @@
 #import "@preview/polylux:0.4.0": *
 #import "../common/lib.typ"
 
-#let landing-slide(
+#let slide-landing(
   content: context [
     #pad(
       top: 150pt,
@@ -50,8 +50,8 @@
   ]
 ]
 
-#let title-slide(title, underscore_color) = [
-  #landing-slide(
+#let slide-title(title, underscore_color) = [
+  #slide-landing(
     content: [
       #pad(
         top: 250pt,
@@ -64,18 +64,7 @@
   )
 ]
 
-#let bottom-annotation(annotation) = [
-  #place(
-    bottom,
-    dy: 25pt,
-    [
-      #set text(size: 18pt)
-      #annotation
-    ]
-  )
-]
-
-#let default(doc) = [
+#let slides-default(doc) = [
   #set page(paper: "presentation-16-9", margin: 35pt, numbering: none)
   #set text(size: 24pt, font: "IBM Plex Sans")
 

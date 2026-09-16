@@ -1,12 +1,12 @@
-#import "../templates/common/lib.typ": *
-#import "../templates/subject/lib.typ"
-#show: lib.default
+#import "../src/common/lib.typ": *
+#import "../src/subject/lib.typ": *
+#show: subject-default
 
 #set document(title: "DEMO", description: "FULL DEMO OF THE SYNTAX")
 
-#lib.subject-title-page()
+#subject-title-page()
 
-#lib.subject-page([
+#subject-page([
   = DEMO
 
   == Common text formatting
@@ -28,7 +28,7 @@
   ```
 ])
 
-#lib.subject-page([
+#subject-page([
   = Lists
 
   == Unordered
@@ -44,7 +44,7 @@
   3. three
 ])
 
-#lib.subject-page([
+#subject-page([
   #note("note")
   #tip("tip")
   #important("important")
@@ -75,4 +75,4 @@
   ])
 ])
 
-#lib.subject-final-page()
+#subject-final-page()

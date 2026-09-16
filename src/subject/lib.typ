@@ -83,7 +83,7 @@
   )
 }
 
-#let default(doc) = [
+#let subject-default(doc) = [
   #show title: set text(size: 3em)
   #set text(size: 12pt)
 

@@ -1,16 +1,16 @@
 #import "@preview/polylux:0.4.0": *
-#import "../templates/common/lib.typ": *
-#import "../templates/slides/lib.typ"
+#import "../src/common/lib.typ": *
+#import "../src/slides/lib.typ": *
 
 #set page(paper: "presentation-16-9", numbering: "1")
-#show: lib.default
+#show: slides-default
 
 #set document(
   title: "DEMO",
   description: "Sous-titre",
 )
 
-#lib.landing-slide()
+#slide-landing()
 
 
 #slide[
@@ -19,7 +19,7 @@
   - Yes
 ]
 
-#lib.title-slide("AAAAAAAAAAAAAAAAAA", colors.orange)
+#slide-title("AAAAAAAAAAAAAAAAAA", colors.orange)
 
 #slide[
   = Look at this image
@@ -39,5 +39,5 @@
 
   some content below
 
-  #lib.bottom-annotation(note("Very important note!!!!!! Beware"))
+  #bottom-annotation(note("Very important note!!!!!! Beware"))
 ]

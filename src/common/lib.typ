@@ -72,6 +72,17 @@
   #warning(content)
 ]
 
+#let bottom-annotation(annotation) = [
+  #place(
+    bottom,
+    dy: 25pt,
+    [
+      #set text(size: 18pt)
+      #annotation
+    ]
+  )
+]
+
 #let default(doc) = [
   #show title: set text(font: "Anton")
   #show link: set text(fill: colors.blue)
