@@ -1,5 +1,4 @@
-#import "../src/common/lib.typ": *
-#import "../src/subject/lib.typ": *
+#import "../src/entry.typ": *
 #show: subject-default
 
 #set document(title: "DEMO", description: "FULL DEMO OF THE SYNTAX")
