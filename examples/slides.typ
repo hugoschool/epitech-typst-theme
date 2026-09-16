@@ -15,13 +15,15 @@
 #slide[
   = Sommaire
 
-  - Yes
+  + I think this can be considered way too long of a title
+  + One more thing
+  + Conclusion
 ]
 
-#slide-title("AAAAAAAAAAAAAAAAAA", colors.orange)
+#slide-title("I think this can be considered way too long of a title", colors.orange)
 
 #slide[
-  = Look at this image
+  = #epitech-underscore("Look at this image")
 
   some content above
   #grid(
@@ -39,4 +41,18 @@
   some content below
 
   #bottom-annotation(note("Very important note!!!!!! Beware"))
+]
+
+#slide-title("One more thing", colors.green)
+
+#slide[
+  #image("./image.png", width: 900pt)
+]
+
+#slide-title("Conclusion", colors.pink)
+
+#slide[
+  = #epitech-underscore("This is uninteresting")
+
+  yeah there's nothing here.
 ]

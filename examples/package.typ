@@ -4,7 +4,7 @@
 #import "@local/epitech-theme:1.0.0": *
 
 #set page(paper: "presentation-16-9", numbering: "1")
-#show: subject-default
+#show: slides-default
 
 #set document(
   title: "DEMO",
@@ -12,3 +12,5 @@
 )
 
 #slide-landing()
+
+#slide-title("Hello world", colors.orange)
