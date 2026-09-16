@@ -1,6 +1,6 @@
 [package]
 name = "epitech-theme"
-version = "1.1.0"
+version = "1.2.0"
 entrypoint = "src/entry.typ"
 authors = ["Hugo ARNAL"]
 license = "None"
