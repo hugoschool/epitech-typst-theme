@@ -1,0 +1,11 @@
+[package]
+name = "epitech-theme"
+version = "1.0.0"
+entrypoint = "src/entry.typ"
+authors = ["Hugo ARNAL"]
+license = "None"
+description = ""
+repository = "https://github.com/hugoschool/epitech-typst-theme"
+categories = []
+keywords = []
+exclude = ["examples", "tests"]
