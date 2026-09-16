@@ -33,7 +33,7 @@
       look at this?!!!!!
     ],
     figure(
-      image("../assets/image.png", width: 250pt),
+      image("./image.png", width: 250pt),
     ),
   )
 
