@@ -1,8 +1,8 @@
 PACKAGES_PATH	?=	~/.cache/typst/packages
 PACKAGE_PATH	:=	local/epitech-theme
 
-# IMPORTANT: match with typst.toml
-VERSION	:=	1.2.0
+# IMPORTANT: match with typst.toml & examples/package.typ
+VERSION	:=	1.3.0
 
 FULL_PATH	:=	$(PACKAGES_PATH)/$(PACKAGE_PATH)/$(VERSION)
 
