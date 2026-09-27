@@ -2,6 +2,9 @@
 #import "decoration.typ"
 #import "utils.typ"
 
+// Used to set either subject or slides mode
+#let THEME_MODE = state("theme_mode", none)
+
 #let epitech-underscore(content, underscore_color: colors.orange) = {
   [
     #content
@@ -26,29 +29,45 @@
   )
 }
 
-#let annotation(content, image_name, background_color: white) = [
+#let annotation(content, image_name, background_color: white) = context [
   #let stroke-color = rgb(229, 229, 229);
+
+  #let boxed-content = [
+    #box(
+      pad(
+        pad(
+          content,
+          left: 5pt
+        ),
+        10pt,
+      ),
+      fill: background_color,
+      width: 100%,
+      stroke: (bottom: 2pt + stroke-color, right: 2pt + stroke-color),
+      radius: 5pt,
+    )
+  ];
+
+  // Very complicated workaround to make the annotation icon stick to the top left
+  #let image_offset_height = {
+    if THEME_MODE.get() == "slides" {
+      if measure(boxed-content).height < 125pt {
+        -50pt
+      } else {
+        -measure(boxed-content).height - 20pt
+      }
+    } else {
+      -measure(boxed-content).height - 20pt
+    }
+  }
 
   #pad(
     [
-      #box(
-        pad(
-          pad(
-            content,
-            left: 5pt
-          ),
-          10pt,
-        ),
-        fill: background_color,
-        width: 100%,
-        stroke: (bottom: 2pt + stroke-color, right: 2pt + stroke-color),
-        radius: 5pt,
-      )
+      #boxed-content
       #place(
         image(image_name, width: 30pt),
         dx: -20pt,
-        // TODO: doesn't work for very long notes
-        dy: -50pt,
+        dy: image_offset_height,
       )
     ],
     bottom: 10pt,

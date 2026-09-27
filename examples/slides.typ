@@ -57,6 +57,25 @@
   = #epitech-underscore("This is uninteresting")
 
   yeah there's nothing here.
+  #note([
+    very
+    #linebreak()
+    long
+    #linebreak()
+    note
+    #linebreak()
+    note
+    #linebreak()
+    note
+    #linebreak()
+    note
+    #linebreak()
+    note
+    #linebreak()
+    note
+    #linebreak()
+    note
+  ])
 ]
 
 #slide-final(version_text: "1.0.0")

@@ -111,11 +111,11 @@
   #show title: set text(size: 86pt)
   #show link: set text(fill: lib.colors.blue)
 
-
   #show heading: set text(weight: "regular")
   #show heading.where(level: 1): set text(size: 52pt, font: "Anton")
   #show heading.where(level: 2): set text(size: 32pt)
 
+  #lib.THEME_MODE.update(_ => "slides")
   #show: lib.default(doc)
 
   #doc

@@ -105,6 +105,7 @@
   )
   #show heading.where(level: 3): it => pad(it.body, left: 10pt, bottom: 10pt)
 
+  #lib.THEME_MODE.update(_ => "subject")
   #show: lib.default
 
   #doc
