@@ -48,10 +48,17 @@
   subject-decorated-page(content, true, ..args)
 }
 
-#let subject-final-page(content: [
-  #set align(horizon)
-  #lib.utils.colorized-image("/assets/epitech.svg", width: 300pt, original_color: "#013afb", color: white)
-], ..args) = {
+#let subject-final-page(content: none, version_text: none, ..args) = {
+  if content == none {
+    content = [
+      #set align(horizon)
+
+      #lib.version-block(version_text: version_text)
+
+      #lib.utils.colorized-image("/assets/epitech.svg", width: 300pt, original_color: "#013afb", color: white)
+    ]
+  }
+
   subject-decorated-page(content, false, ..args)
 }
 

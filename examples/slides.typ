@@ -57,4 +57,4 @@
   yeah there's nothing here.
 ]
 
-#slide-final()
+#slide-final(version_text: "1.0.0")

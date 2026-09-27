@@ -74,4 +74,4 @@
   ])
 ])
 
-#subject-final-page()
+#subject-final-page(version_text: "1.0.0")

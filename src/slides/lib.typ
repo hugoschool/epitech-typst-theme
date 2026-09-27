@@ -68,12 +68,20 @@
 ]
 
 #let slide-final(
-  content: context [
-    #set align(center)
-
-    #lib.utils.colorized-image("/assets/epitech.svg", width: 300pt, original_color: "#013afb", color: white)
-  ],
+  content: none,
+  version_text: none
 ) = [
+  #if content == none {
+    content = [
+      #set align(center)
+
+      #set text(size: 16pt)
+      #lib.version-block(version_text: version_text)
+
+      #lib.utils.colorized-image("/assets/epitech.svg", width: 300pt, original_color: "#013afb", color: white)
+    ]
+  }
+
   #slide-landing(
     content: content,
     decoration: [

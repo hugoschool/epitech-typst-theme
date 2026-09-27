@@ -87,6 +87,18 @@
   )
 ]
 
+#let version-block(version_text: none) = [
+  #if version_text != none {
+    place(
+      center + top,
+      [
+        #version_text
+      ],
+      dy: 10pt,
+    )
+  }
+]
+
 #let default(doc) = [
   #show title: set text(font: "Anton")
   #show link: set text(fill: colors.blue)
