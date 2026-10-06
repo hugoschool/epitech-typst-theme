@@ -1,4 +1,5 @@
-PACKAGES_PATH	?=	~/.cache/typst/packages
+CACHE_PATH	?=	~/.cache/typst
+PACKAGES_PATH	?=	$(CACHE_PATH)/packages
 PACKAGE_PATH	:=	local/epitech-theme
 
 # IMPORTANT: match with typst.toml & examples/package.typ
