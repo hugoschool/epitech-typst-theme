@@ -49,3 +49,9 @@ typst compile subject.typ --root ..
 For testing purposes, you can use the [examples](#examples).
 
 To verify the font is working properly, a [docker script](./tests/docker.sh) is included in the tests directory.
+
+---
+
+None of the assets (Epitech logos, fonts & else) belong to me.
+
+Please contact me in case of problems, my email is on my GitHub profile.
