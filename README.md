@@ -18,9 +18,31 @@ make
 > CACHE_PATH="/awesome/typst" make
 > ```
 
+## Usage
+
+To compile a file:
+
+```sh
+typst compile <example_name>.typ
+```
+
+> [!NOTE]
+>
+> If you do not have the `Anton` or `IBM Plex Sans` installed / recognized by fontconfig, you might need to use the `--font-path` argument:
+>
+> ```sh
+> typst compile example.typ --font-path ~/.cache/typst/packages/local/epitech-theme
+> ```
+
 ## Examples
 
-Examples are given inside the [examples](./examples/) folder
+Examples are given inside the [examples](./examples/) folder.
+
+```sh
+typst compile subject.typ --root ..
+```
+
+> Only `package.typ` uses the locally installed `@local/epitech-theme` package, and therefore works without `--root`.
 
 ## Testing
 
