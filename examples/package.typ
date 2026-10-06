@@ -1,4 +1,6 @@
-// Example meant to be used once installed
+// /!\ PLEASE READ README.md AT THE ROOT BEFORE TESTING
+//
+// This example is meant to be used once installed
 
 #import "@preview/polylux:0.4.0": *
 #import "@local/epitech-theme:1.3.0": *

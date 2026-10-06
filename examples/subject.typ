@@ -1,3 +1,5 @@
+// /!\ PLEASE READ README.md AT THE ROOT BEFORE TESTING
+//
 #import "../src/entry.typ": *
 #show: subject-default
 

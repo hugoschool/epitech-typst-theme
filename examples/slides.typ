@@ -1,3 +1,5 @@
+// /!\ PLEASE READ README.md AT THE ROOT BEFORE TESTING
+//
 #import "@preview/polylux:0.4.0": *
 #import "../src/entry.typ": *
 
