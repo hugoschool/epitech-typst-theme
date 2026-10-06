@@ -10,10 +10,13 @@ A simple makefile is provided for installation:
 
 ```sh
 make
-
-# In case another cache path is used for typst:
-CACHE_PATH="/awesome/typst" make
 ```
+
+> This will install the package in the default cache path (`~/.cache/typst`). If you wish to change the cache path (maybe if you're using XDG_CACHE_HOME), you can use this:
+>
+> ```sh
+> CACHE_PATH="/awesome/typst" make
+> ```
 
 ## Examples
 
