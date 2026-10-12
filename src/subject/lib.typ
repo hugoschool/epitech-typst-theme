@@ -32,19 +32,27 @@
 }
 
 #let subject-title-page(
-  content: context [
-    // Correctly set the content to about the middle of the page
-    #place(
-      center,
-      dy: 250pt,
-      [
-        #lib.epitech-title(document.title)
-        #lib.epitech-subtitle(document.description)
-      ],
-    )
-  ],
+  content: none,
+  image: none,
   ..args,
 ) = {
+  if content == none {
+    content = context [
+      // Correctly set the content to about the middle of the page
+      #place(
+        center,
+        dy: 250pt,
+        [
+          #lib.epitech-title(document.title)
+          #lib.epitech-subtitle(document.description)
+          #if image != none {
+            image
+          }
+        ],
+      )
+    ]
+  }
+
   subject-decorated-page(content, true, ..args)
 }
 

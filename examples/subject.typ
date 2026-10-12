@@ -5,7 +5,8 @@
 
 #set document(title: "DEMO", description: "FULL DEMO OF THE SYNTAX")
 
-#subject-title-page()
+// #subject-title-page()
+#subject-title-page(image: image("image.png", width: 400pt))
 
 #subject-page([
   = DEMO
