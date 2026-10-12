@@ -3,7 +3,6 @@
 #import "@preview/polylux:0.4.0": *
 #import "../src/entry.typ": *
 
-#set page(paper: "presentation-16-9", numbering: "1")
 #show: slides-default
 
 #set document(
