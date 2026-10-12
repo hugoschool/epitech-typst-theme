@@ -3,7 +3,7 @@
 // This example is meant to be used once installed
 
 #import "@preview/polylux:0.4.0": *
-#import "@local/epitech-theme:1.4.0": *
+#import "@local/epitech-theme:1.5.0": *
 
 #show: slides-default
 
