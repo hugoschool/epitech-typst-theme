@@ -99,6 +99,7 @@
 }
 
 #let subject-default(doc) = [
+  #set page(paper: "a4")
   #show title: set text(size: 3em)
   #set text(size: 12pt)
 
