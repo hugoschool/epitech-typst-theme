@@ -48,26 +48,14 @@
     )
   ];
 
-  // Very complicated workaround to make the annotation icon stick to the top left
-  #let image_offset_height = {
-    if THEME_MODE.get() == "slides" {
-      if measure(boxed-content).height < 125pt {
-        -50pt
-      } else {
-        -measure(boxed-content).height - 20pt
-      }
-    } else {
-      -measure(boxed-content).height - 20pt
-    }
-  }
-
   #pad(
     [
       #boxed-content
       #place(
+        top + left,
         image(image_name, width: 30pt),
         dx: -20pt,
-        dy: image_offset_height,
+        dy: -20pt,
       )
     ],
     bottom: 10pt,
