@@ -50,6 +50,28 @@
   #image("./image.png", width: 900pt)
 ]
 
+#slide[
+  #note(
+    [
+      Just because I don't care doesn't mean I don't understand - 103cipher \
+      \
+      \
+      The quick brown fox jumps over the lazy dog - I  do not know the source...
+    ]
+  )
+
+  #bottom-annotation(
+    note(
+      [
+      Just because I don't care doesn't mean I don't understand - 103cipher \
+      \
+      \
+      The quick brown fox jumps over the lazy dog - I  do not know the source...
+      ]
+    )
+  )
+]
+
 #slide-title("Conclusion", colors.pink)
 
 #slide[

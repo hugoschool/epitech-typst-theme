@@ -47,7 +47,18 @@
 ])
 
 #subject-page([
+  = Annotations
+
   #note("note")
+  #note("very lengthy note with lots of unimportant informations that goes absolutely nowhere!")
+  #note(
+    [
+      Just because I don't care doesn't mean I don't understand - 103cipher \
+      \
+      \
+      The quick brown fox jumps over the lazy dog - I  do not know the source...
+    ]
+  )
   #tip("tip")
   #important("important")
   #warning("warning")
