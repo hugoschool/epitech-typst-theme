@@ -3,7 +3,7 @@ PACKAGES_PATH	?=	$(CACHE_PATH)/packages
 PACKAGE_PATH	:=	local/epitech-theme
 
 # IMPORTANT: match with typst.toml & examples/package.typ
-VERSION	:=	1.5.0
+VERSION	:=	1.5.1
 
 FULL_PATH	:=	$(PACKAGES_PATH)/$(PACKAGE_PATH)/$(VERSION)
 
