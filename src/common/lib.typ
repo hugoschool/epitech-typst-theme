@@ -45,6 +45,7 @@
       width: 100%,
       stroke: (bottom: 2pt + stroke-color, right: 2pt + stroke-color),
       radius: 5pt,
+      outset: 0.15cm,
     )
   ];
 
@@ -122,4 +123,51 @@
   )
 
   #doc
+]
+
+#let tab = context {
+  let tab_left = 1cm // leftmost tab stop (i.e. page margin)
+  let tab_width = 2.0cm // width of a single tab stop
+
+  let pos = here().position() // caller position
+  let advance_to = tab_left + tab_width
+  box(width: advance_to - pos.x)[#text(size: 4pt, fill: purple)[]]
+}
+
+#let quotes(content, attribution) = [
+  #show quote.where(block: true): block.with(stroke: (left:3pt + gray, rest: none), fill: luma(240),inset: 1.2em, width: 100%)
+    #quote(block:true, attribution: attribution)[
+      #content
+    ]
+]
+
+#let h3(content) = [
+  #tab *#content* \
+  #tab #line(
+    length: 100%,
+    start:(9%, -0.5%), end:(100%, -0.5%))
+]
+
+#let terminal(content) = [
+  #rect(width: 100%, fill: luma(230))[
+    #align(top + center)[Terminal]
+    #rect(width: 100%, outset: 0.2cm, fill: rgb("#083642"))[#text(content, fill: white)]
+  ]
+
+  \
+]
+
+#let block_text(content) = [
+  #text(content)
+
+  \
+]
+
+#let backtick(content) = [
+  #box(
+    fill: luma(235),
+    inset: (x: 3pt, y: 0pt),
+    outset: (y: 3pt),
+    radius: 2pt,
+  )[#content]
 ]

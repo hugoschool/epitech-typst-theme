@@ -52,7 +52,6 @@
       )
     ]
   }
-
   subject-decorated-page(content, true, ..args)
 }
 
