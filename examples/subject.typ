@@ -88,4 +88,21 @@
   ])
 ])
 
+#subject-page([
+  this is going to be very long
+
+  #lorem(720)
+
+  #linebreak()
+
+  welcome to another page!
+
+  #for _ in range(25) {
+    linebreak()
+  }
+
+  // The note is at the limit of the page
+  #note(lorem(256))
+])
+
 #subject-final-page(version_text: "1.0.0")
