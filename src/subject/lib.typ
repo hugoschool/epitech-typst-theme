@@ -91,8 +91,8 @@
       #set align(center)
       #lib.utils.colorized-image("/assets/epitech.svg", width: 200pt, original_color: "#013afb", color: lib.colors.blue-opacity-50)
     ],
-    margin: 40pt,
-    footer-descent: -50pt,
+    margin: (top: 40pt, bottom: 70pt, left: 40pt, right: 40pt),
+    footer-descent: -20pt,
     ..args,
   )
 }
