@@ -33,6 +33,10 @@
   ==== This is a level 4 header title
 
   #lorem(50)
+
+  #note("Note between text!")
+
+  #lorem(15)
 ])
 
 #subject-page([
@@ -69,32 +73,22 @@
   #warning("warning")
   #caution("caution")
   #note([
-    very
-    #linebreak()
-    long
-    #linebreak()
-    note
-    #linebreak()
-    note
-    #linebreak()
-    note
-    #linebreak()
-    note
-    #linebreak()
-    note
-    #linebreak()
-    note
-    #linebreak()
-    note
-    #linebreak()
-    note
-    #linebreak()
+    very \
+    long \
+    note \
+    note \
+    note \
+    note \
+    note \
+    note \
+    note \
+    note \
     note
   ])
 ])
 
 #subject-page([
-  this is going to be very long
+  ==== this is going to be very long
 
   #lorem(720)
 
@@ -102,7 +96,7 @@
 
   welcome to another page!
 
-  #for _ in range(25) {
+  #for _ in range(15) {
     linebreak()
   }
 

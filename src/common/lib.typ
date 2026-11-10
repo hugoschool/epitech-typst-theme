@@ -58,6 +58,7 @@
         dy: -20pt,
       )
     ],
+    top: 10pt,
     bottom: 10pt,
   )
 ]
