@@ -108,11 +108,20 @@
   #show heading.where(level: 1): set text(size: 30pt)
   #show heading.where(level: 2): set text(size: 18pt)
 
-  #show heading.where(level: 3): set text(size: 15pt)
-  #show heading.where(level: 3): set block(
-    stroke: (bottom: 1pt),
-  )
-  #show heading.where(level: 3): it => pad(it.body, left: 10pt, bottom: 10pt)
+  #show heading.where(level: 3): set text(size: 12pt)
+  #show heading.where(level: 3): it => {
+    // First block is to push the text to the left
+    // Second block is to add the stroke under
+    block(
+      block(
+        it.body,
+        width: 100%,
+        inset: (bottom: 15pt),
+        stroke: (bottom: 1pt)
+      ),
+      inset: (left: 50pt)
+    )
+  }
 
   #lib.THEME_MODE.update(_ => "subject")
   #show: lib.default

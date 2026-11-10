@@ -5,7 +5,6 @@
 
 #set document(title: "DEMO", description: "FULL DEMO OF THE SYNTAX")
 
-// #subject-title-page()
 #subject-title-page(image: image("image.png", width: 400pt))
 
 #subject-page([
@@ -28,6 +27,12 @@
     return 0;
   }
   ```
+
+  === This is a level 3 header title
+
+  ==== This is a level 4 header title
+
+  #lorem(50)
 ])
 
 #subject-page([
