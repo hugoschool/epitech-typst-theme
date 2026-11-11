@@ -1,5 +1,7 @@
 #let annotation(content, image_name, background_color: white) = context [
   #let stroke-color = rgb(229, 229, 229);
+  #let stroke-small-size = 0.75pt;
+  #let stroke-big-size = 2pt;
 
   #let boxed-content = [
     #box(
@@ -12,7 +14,12 @@
       ),
       fill: background_color,
       width: 100%,
-      stroke: (bottom: 2pt + stroke-color, right: 2pt + stroke-color),
+      stroke: (
+        bottom: stroke-big-size + stroke-color,
+        right: stroke-big-size + stroke-color,
+        top: stroke-small-size + stroke-color,
+        left: stroke-small-size + stroke-color
+      ),
       radius: 5pt,
     )
   ];
