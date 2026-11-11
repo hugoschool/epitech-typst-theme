@@ -4,7 +4,7 @@ set -euo pipefail
 
 if [ "$#" -ne 2 ]; then
     echo "Usage:"
-    echo "  ./bump_version.sh <OLD_VERSION> <NEW_VERSION>"
+    echo "  $0 <OLD_VERSION> <NEW_VERSION>"
     exit 1
 fi
 

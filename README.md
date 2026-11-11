@@ -48,7 +48,7 @@ typst compile subject.typ --root ..
 
 For testing purposes, you can use the [examples](#examples).
 
-To verify the font is working properly, a [docker script](./tests/docker.sh) is included in the tests directory.
+To verify the font is working properly, a [docker script](./scripts/docker.sh) is included in the tests directory.
 
 ---
 
