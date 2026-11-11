@@ -59,11 +59,13 @@
     rect(width: 100%, fill: rgb(7, 54, 66))[
       #set text(fill: white)
 
-      // "Resets" the raw text to a non padded version
-      #show raw.where(block: true): it => it.text
       #show raw.where(block: true): set block(fill: rgb(7, 54, 66))
+      // Remove most padding from code blocks
+      // Why -5pt instead of -10pt? Anything > -5pt completely breaks
+      // the padding and seems to be reversing it to 100% width
+      #show raw.where(block: true): it => pad(it, -5pt)
 
-      #raw(content, block: true)
+      #content
     ]
   )
 ]

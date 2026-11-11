@@ -37,11 +37,50 @@
   #note("Note between text!")
 
   #lorem(15)
+])
+
+#subject-page([
+  == Terminals
 
   #terminal(
-    "$> echo \"This is the most simple terminal!\"
-This is the most simple terminal!"
+    "$> echo \"This is the most simple terminal!\""
   )
+
+  // Taken from GNU coreutils
+  #terminal(```bash
+  $ ls --help
+  Usage: ls [OPTION]... [FILE]...
+  List information about the FILEs (the current directory by default).
+  Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+  ```)
+
+  #terminal(```rust
+  fn main() {
+    println!("Hello world!")
+  }
+  ```)
+
+  #terminal([
+    ```bash
+    $ cat python.py
+    ```
+    ```python
+    from random import randint
+
+    print(f"Hello world! {randint(0, 42)}")
+    ```
+    ```bash
+    $ cat program.c
+    ```
+    ```c
+    #include <stdio.h>
+
+    int main(void) {
+      printf("Hello world!");
+      return 0;
+    }
+    ```
+  ])
 ])
 
 #subject-page([
