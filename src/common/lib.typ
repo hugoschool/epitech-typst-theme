@@ -43,6 +43,8 @@
 ]
 
 #let terminal(content) = [
+  #show grid: set block(breakable: false)
+
   #grid(
     rows: 2,
     rect(width: 100%, fill: rgb(229, 229, 229))[

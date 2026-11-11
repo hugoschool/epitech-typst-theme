@@ -146,6 +146,18 @@
 
   // The note is at the limit of the page
   #note(lorem(256))
+
+  #lorem(156)
+
+  #terminal(```
+  Hello
+  world
+  this
+  is
+  a
+  long
+  terminal!
+  ```)
 ])
 
 #subject-final-page(version_text: "1.0.0")
