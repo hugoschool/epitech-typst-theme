@@ -42,6 +42,32 @@
   }
 ]
 
+#let terminal(content) = [
+  #grid(
+    rows: 2,
+    rect(width: 100%, fill: rgb(229, 229, 229))[
+      #grid(
+        rows: 1,
+        columns: 3,
+        gutter: 1fr,
+        [#text([∇], fill: gray)],
+        // Add padding to remedy the page margin
+        [#pad("Terminal", left: 30pt)],
+        [#text([`—  +  x`], fill: gray)]
+      )
+    ],
+    rect(width: 100%, fill: rgb(7, 54, 66))[
+      #set text(fill: white)
+
+      // "Resets" the raw text to a non padded version
+      #show raw.where(block: true): it => it.text
+      #show raw.where(block: true): set block(fill: rgb(7, 54, 66))
+
+      #raw(content, block: true)
+    ]
+  )
+]
+
 #let default(doc) = [
   #show title: set text(font: "Anton")
   #show link: set text(fill: colors.blue)

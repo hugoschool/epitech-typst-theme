@@ -37,6 +37,11 @@
   #note("Note between text!")
 
   #lorem(15)
+
+  #terminal(
+    "$> echo \"This is the most simple terminal!\"
+This is the most simple terminal!"
+  )
 ])
 
 #subject-page([
