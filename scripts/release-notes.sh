@@ -13,7 +13,7 @@ NEW_VERSION=$2
 REPOSITORY_URL="https://github.com/hugoschool/epitech-typst-theme"
 
 echo "Changes:"
-echo "    - detail them yourself here!"
+echo "- detail them yourself here!"
 echo ""
 
 echo "Commits:"
