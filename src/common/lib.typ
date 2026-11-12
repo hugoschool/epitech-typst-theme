@@ -73,10 +73,17 @@
 ]
 
 #let default(doc) = [
+  #let raw-background = rgb(235, 235, 235);
+
   #show title: set text(font: "Anton")
   #show link: set text(fill: colors.blue)
 
   #set text(font: "IBM Plex Sans")
+
+  #show raw.where(block: false): it => highlight(
+    it,
+    fill: raw-background,
+  )
 
   // Codeblocks
   #show raw.where(block: true): it => pad(
