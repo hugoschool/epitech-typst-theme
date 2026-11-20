@@ -40,3 +40,6 @@ checkForGitFileUpdate() {
 checkForGitFileUpdate "Makefile"
 checkForGitFileUpdate "typst.toml"
 checkForGitFileUpdate "examples/package.typ"
+
+echo ""
+echo "Now make sure to tag the release, get the release notes (release-notes.sh) and add the artifacts (release-artifacts.sh)"
