@@ -105,7 +105,15 @@
 ]
 
 #let slides-default(doc) = [
-  #set page(paper: "presentation-16-9", margin: 35pt, numbering: none)
+  #set page(
+    paper: "presentation-16-9",
+    margin: 35pt,
+    footer: [
+      #set text(size: .6em)
+      #set align(right)
+      #toolbox.slide-number
+    ],
+  )
   #set text(size: 24pt, font: "IBM Plex Sans")
 
   #show title: set text(size: 86pt)
