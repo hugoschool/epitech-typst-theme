@@ -27,6 +27,7 @@
       #text("/>", fill: underscore_color)
     ],
     level: 2,
+    outlined: false,
   )
 }
 

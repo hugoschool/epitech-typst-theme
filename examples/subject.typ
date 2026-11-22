@@ -8,6 +8,10 @@
 #subject-title-page(image: image("image.png", width: 400pt))
 
 #subject-page([
+  #outline()
+])
+
+#subject-page([
   = DEMO
 
   == Common text formatting
